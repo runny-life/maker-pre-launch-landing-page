@@ -1,0 +1,49 @@
+@import 'tailwindcss';
+@import './typography.css';
+
+@theme {
+  /* Colors */
+  --color-neutral: #ffffff;
+  --color-neutral-400: #777f98;
+  --color-neutral-900: #080c20;
+  --color-cyan-400: #3ee9e5;
+  --color-red-400: #ff2965;
+  --color-blue-gray-500: #6b8ca4;
+  --color-blue: #093f68;
+  /* Fonts */
+  --font-manrope: 'Manrope', sans-serif;
+  --text-preset-1: clamp(2rem, 1.046rem + 4.071vw, 3rem);
+  --text-preset-1--line-height: 1.2;
+  --text-preset-1--letter-spacing: 0;
+  --text-preset-2: 2.5rem;
+  --text-preset-2--line-height: 1.4;
+  --text-preset-2--letter-spacing: 0;
+  --text-preset-3: 2rem;
+  --text-preset-3--line-height: 1.4;
+  --text-preset-3--letter-spacing: 0;
+  --text-preset-4: 1.125rem;
+  --text-preset-4--line-height: 1.4;
+  --text-preset-4--letter-spacing: 0;
+  --text-preset-5: 0.938rem;
+  --text-preset-5--line-height: 1.6;
+  --text-preset-5--letter-spacing: 0;
+  --text-preset-6: 0.938rem;
+  --text-preset-6--line-height: 1.4;
+  --text-preset-6--letter-spacing: 0;
+  --text-preset-7: 0.75rem;
+  --text-preset-7--line-height: 1.4;
+  --text-preset-7--letter-spacing: 0;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-manrope);
+    color: var(--color-neutral-400);
+    background-color: var(--color-neutral-900);
+  }
+}
+
+@utility container {
+  margin-inline: auto;
+  padding-inline: clamp(1rem, 0.046rem + 4.071vw, 2rem);
+}
