@@ -66,7 +66,9 @@
           Life free
         </h2>
         <div class="container">
-          <ul class="grid justify-center gap-12 md:gap-9 lg:grid-cols-4 lg:gap-8">
+          <ul
+            class="flex flex-col items-center justify-center gap-12 md:justify-between md:gap-9 lg:grid-cols-4 lg:flex-row lg:gap-8"
+          >
             <li class="md:odd:pl-12 lg:odd:pl-0 lg:even:pt-12">
               <article
                 class="flex flex-col items-center gap-8 md:flex-row md:gap-12 lg:max-w-63.75 lg:flex-col lg:items-start"
@@ -80,7 +82,7 @@
                   </svg>
                 </div>
                 <div class="flex flex-col gap-3 text-center md:gap-4 md:pr-36 md:text-start lg:p-0">
-                  <h3 class="text-preset-4 text-neutral">Indulge your passions</h3>
+                  <h3 class="text-preset-4 text-neutral font-extrabold">Indulge your passions</h3>
                   <p class="text-preset-5">
                     Your passions shouldn't be just for the weekend. Earn a living doing what you
                     love.
@@ -101,7 +103,7 @@
                   </svg>
                 </div>
                 <div class="flex flex-col gap-3 text-center md:gap-4 md:pr-36 md:text-start lg:p-0">
-                  <h3 class="text-preset-4 text-neutral">Gain financial freedom</h3>
+                  <h3 class="text-preset-4 text-neutral font-extrabold">Gain financial freedom</h3>
                   <p class="text-preset-5">
                     Start making money work for you. There’s nothing quite like earning while you
                     sleep.
@@ -122,7 +124,7 @@
                   </svg>
                 </div>
                 <div class="flex flex-col gap-3 text-center md:gap-4 md:pr-36 md:text-start lg:p-0">
-                  <h3 class="text-preset-4 text-neutral">Choose your lifestyle</h3>
+                  <h3 class="text-preset-4 text-neutral font-extrabold">Choose your lifestyle</h3>
                   <p class="text-preset-5">
                     Own your daily schedule. Fancy a lie-in? Go for it! Take charge of your week.
                   </p>
@@ -142,7 +144,7 @@
                   </svg>
                 </div>
                 <div class="flex flex-col gap-3 text-center md:gap-4 md:pr-36 md:text-start lg:p-0">
-                  <h3 class="text-preset-4 text-neutral">Work from anywhere</h3>
+                  <h3 class="text-preset-4 text-neutral font-extrabold">Work from anywhere</h3>
                   <p class="text-preset-5">
                     Selling online means not being pinned down. Want to work AND travel? Go for it!
                   </p>
@@ -150,6 +152,122 @@
               </article>
             </li>
           </ul>
+        </div>
+      </section>
+      <section aria-label="pricing-title">
+        <div class="container flex flex-col items-center gap-20">
+          <div class="flex max-w-135 flex-col gap-6 text-center">
+            <h2 class="text-preset-1 text-neutral font-extrabold">Our pricing plans</h2>
+            <p class="text-preset-5 text-neutral/60">
+              We only make money when our creators make money. Our plans are always affordable, and
+              it’s completely free to get started.
+            </p>
+          </div>
+          <div class="lg: flex flex-col items-center gap-20 lg:flex-row">
+            <article
+              class="bg-blue relative flex w-full max-w-111.25 flex-col gap-6 rounded-lg px-5 pt-12 pb-8 before:absolute before:-top-5.75 before:left-5 before:size-11.25 before:bg-[url('/src/assets/icons/icon-free.svg')] before:bg-cover before:bg-no-repeat before:content-[''] md:px-8 md:py-12"
+            >
+              <div class="flex flex-col gap-4">
+                <h3 class="text-preset-4 text-neutral font-extrabold">Dip your toe</h3>
+                <p class="text-preset-5">
+                  Just getting started? No problem at all! Our free plan will take you a long way.
+                </p>
+              </div>
+              <p class="text-preset-2 text-neutral font-extrabold">Free</p>
+              <ul class="text-neutral flex flex-col gap-3">
+                <li class="flex items-center gap-4">
+                  <svg
+                    class="h-2.25 w-3 text-cyan-400"
+                    aria-hidden="true"
+                  >
+                    <use href="#icon-check"></use>
+                  </svg>
+                  <span class="text-preset-5">Unlimited products</span>
+                </li>
+                <li class="flex items-center gap-4">
+                  <svg
+                    class="h-2.25 w-3 text-cyan-400"
+                    aria-hidden="true"
+                  >
+                    <use href="#icon-check"></use>
+                  </svg>
+                  <span class="text-preset-5">Basic analytics</span>
+                </li>
+                <li class="flex items-center gap-4">
+                  <svg
+                    class="h-2.25 w-3 text-cyan-400"
+                    aria-hidden="true"
+                  >
+                    <use href="#icon-check"></use>
+                  </svg>
+                  <span class="text-preset-5">Limited marketplace exposure</span>
+                </li>
+                <li class="flex items-center gap-4">
+                  <svg
+                    class="h-2.25 w-3 text-cyan-400"
+                    aria-hidden="true"
+                  >
+                    <use href="#icon-check"></use>
+                  </svg>
+                  <span class="text-preset-5">10% fee per transaction</span>
+                </li>
+              </ul>
+            </article>
+            <article
+              class="relative flex max-w-111.25 flex-col gap-6 rounded-lg bg-cyan-400 px-5 pt-16 pb-8 before:absolute before:-top-8 before:left-5 before:h-16.25 before:w-12.5 before:bg-[url('/src/assets/icons/icon-paid.svg')] before:bg-cover before:bg-no-repeat before:content-[''] md:px-8 md:py-16"
+            >
+              <div class="clear-both flex flex-col gap-4">
+                <h3 class="text-preset-4 font-extrabold text-neutral-900">Dive right in</h3>
+                <p class="text-preset-5 text-neutral-900/60">
+                  Ready for the big time? Our paid plan will help you take your business to the next
+                  level.
+                </p>
+              </div>
+              <p
+                class="text-preset-2 inline-flex items-center gap-2 font-extrabold text-neutral-900"
+              >
+                $25.00 <span class="text-preset-5 font-medium text-neutral-900/60">/ month</span>
+              </p>
+              <ul class="flex flex-col gap-3 text-neutral-900">
+                <li class="flex items-center gap-4">
+                  <svg
+                    class="text-blue h-2.25 w-3"
+                    aria-hidden="true"
+                  >
+                    <use href="#icon-check"></use>
+                  </svg>
+                  <span class="text-preset-5">Custom domain</span>
+                </li>
+                <li class="flex items-center gap-4">
+                  <svg
+                    class="text-blue h-2.25 w-3"
+                    aria-hidden="true"
+                  >
+                    <use href="#icon-check"></use>
+                  </svg>
+                  <span class="text-preset-5">Advanced analytics and reports</span>
+                </li>
+                <li class="flex items-center gap-4">
+                  <svg
+                    class="text-blue h-2.25 w-3"
+                    aria-hidden="true"
+                  >
+                    <use href="#icon-check"></use>
+                  </svg>
+                  <span class="text-preset-5">High marketplace visibility</span>
+                </li>
+                <li class="flex items-center gap-4">
+                  <svg
+                    class="text-blue h-2.25 w-3"
+                    aria-hidden="true"
+                  >
+                    <use href="#icon-check"></use>
+                  </svg>
+                  <span class="text-preset-5">5% fee per transaction</span>
+                </li>
+              </ul>
+            </article>
+          </div>
         </div>
       </section>
     </main>
