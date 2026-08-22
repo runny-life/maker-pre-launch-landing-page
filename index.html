@@ -271,6 +271,41 @@
         </div>
       </section>
     </main>
+    <footer class="grid items-center justify-center pt-20 pb-16">
+      <div class="col-start-1 row-start-1 overflow-hidden">
+        <svg class="h-26.25 w-192.75 md:h-38.25 md:w-280 lg:h-56.5 lg:w-[104rem]">
+          <use href="#bg-footer-squiggle"></use>
+        </svg>
+      </div>
+      <div class="col-start-1 row-start-1 container flex flex-col items-center gap-10">
+        <h2 class="text-preset-3 text-neutral text-center font-extrabold">
+          Get notified when we launch
+        </h2>
+        <form
+          class="flex w-full max-w-[20rem] flex-col justify-center gap-5 md:max-w-119.25 md:flex-row"
+          action="#"
+        >
+          <label
+            class="visually-hidden"
+            for="email"
+            >Email</label
+          >
+          <input
+            class="bg-blue placeholder:font-manrope placeholder:text-preset-6 placeholder:text-blue-gray-500 font-manrope text-neutral h-11.25 w-full rounded-full px-5 py-3 placeholder:font-extrabold"
+            id="email"
+            type="email"
+            placeholder="Email address"
+            name="email"
+          />
+          <button
+            class="text-preset-6 text-blue shrink-0 cursor-pointer rounded-full bg-cyan-400 px-6 py-3 font-extrabold"
+            type="submit"
+          >
+            Get notified
+          </button>
+        </form>
+      </div>
+    </footer>
     <script
       type="module"
       src="./src/scripts/main.js"
