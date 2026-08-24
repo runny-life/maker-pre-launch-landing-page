@@ -282,21 +282,34 @@
           Get notified when we launch
         </h2>
         <form
-          class="flex w-full max-w-[20rem] flex-col justify-center gap-5 md:max-w-119.25 md:flex-row"
+          class="flex w-full max-w-[20rem] flex-col justify-center gap-5 md:max-w-119.25 md:flex-row md:items-start"
           action="#"
+          data-js-form
+          novalidate
         >
           <label
             class="visually-hidden"
             for="email"
             >Email</label
           >
-          <input
-            class="bg-blue placeholder:font-manrope placeholder:text-preset-6 placeholder:text-blue-gray-500 font-manrope text-neutral h-11.25 w-full rounded-full border border-transparent px-5 py-3 transition-colors duration-300 placeholder:font-extrabold hover:border-cyan-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-400 focus-visible:duration-0"
-            id="email"
-            type="email"
-            placeholder="Email address"
-            name="email"
-          />
+          <div class="flex w-full flex-col gap-1.5 md:flex-col-reverse">
+            <span
+              class="text-preset-7 min-h-4.75 text-red-400 opacity-0 transition-opacity duration-300"
+              id="error-message"
+              role="alert"
+              data-js-error-message
+            ></span>
+            <input
+              class="bg-blue placeholder:font-manrope placeholder:text-preset-6 placeholder:text-blue-gray-500 font-manrope text-neutral h-11.25 rounded-full border border-transparent px-5 py-3 transition-colors duration-300 placeholder:font-extrabold hover:border-cyan-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-400 focus-visible:duration-0"
+              id="email"
+              type="email"
+              placeholder="Email address"
+              name="email"
+              aria-describedby="error-message"
+              aria-invalid="false"
+              data-js-form-input
+            />
+          </div>
           <button
             class="text-preset-6 text-blue hover:text-neutral shrink-0 cursor-pointer rounded-full border-2 border-cyan-400 bg-cyan-400 px-6 py-3 font-extrabold transition-colors duration-300 hover:bg-transparent focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-400 focus-visible:duration-0"
             type="submit"
