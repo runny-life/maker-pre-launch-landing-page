@@ -1,104 +1,185 @@
-# Frontend Mentor - Maker pre-launch landing page
+# Frontend Mentor - Maker pre-launch landing page solution
 
-![Design preview for the Maker pre-launch landing page coding challenge](./preview.jpg)
+This is a solution to the [Maker pre-launch landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/maker-prelaunch-landing-page-WVZIJtKLd). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-## Welcome! 👋
+## Table of contents
 
-Thanks for purchasing this premium Frontend Mentor coding challenge.
+- [Frontend Mentor - Maker pre-launch landing page solution](#frontend-mentor---maker-pre-launch-landing-page-solution)
+  - [Table of contents](#table-of-contents)
+  - [Overview](#overview)
+    - [The challenge](#the-challenge)
+    - [Screenshot](#screenshot)
+    - [Links](#links)
+  - [My process](#my-process)
+    - [Built with](#built-with)
+    - [What I learned](#what-i-learned)
+      - [1. Responsive Design with Tailwind CSS](#1-responsive-design-with-tailwind-css)
+      - [2. Custom Theme Configuration](#2-custom-theme-configuration)
+      - [3. Form Validation with JavaScript](#3-form-validation-with-javascript)
+      - [4. SVG Sprites](#4-svg-sprites)
+      - [5. Accessibility Best Practices](#5-accessibility-best-practices)
+      - [6. Accessibility and User Preferences](#6-accessibility-and-user-preferences)
+    - [Continued development](#continued-development)
+    - [Useful resources](#useful-resources)
+    - [AI Collaboration](#ai-collaboration)
+  - [Author](#author)
+  - [Acknowledgments](#acknowledgments)
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects. These premium challenges are perfect portfolio pieces, so please feel free to use what you create in your portfolio to show others.
+## Overview
 
-**To do this challenge, you need a basic understanding of HTML, CSS, and JavaScript.**
+### The challenge
 
-## The challenge
-
-Your challenge is to build out this pre-launch landing page and get it looking as close to the design as possible.
-
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
-
-Your users should be able to:
+Users should be able to:
 
 - View the optimal layout depending on their device's screen size
 - See hover states for interactive elements
 - Receive an error message when the form is submitted if:
   - The `Email address` field is empty should show "Oops! Please add your email"
-  - The email is not formatted correctly should show "Oops! That doesn’t look like an email address"
+  - The email is not formatted correctly should show "Oops! That doesn't look like an email address"
 
-### Want some support on the challenge?
+### Screenshot
 
-[Join our community](https://www.frontendmentor.io/community) and ask questions in the **#help** channel.
+![Screenshot of the solution](./screenshot.png)
 
-## Where to find everything
+### Links
 
-Your task is to build out the project to the design file provided. You can download the Figma design file on the platform. **Please be sure not to share it with anyone else.** The design download comes with a `README.md` file as well to help you get set up.
+- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
-All the required assets for this project are in the `/assets` folder. The assets are already exported for the correct screen size and optimized. Some images are reusable at multiple screen sizes. So if you don't see an image in a specific folder, it will typically be in another folder for that page.
+## My process
 
-The design system in the design file will give you more information about the various colors, fonts, and styles used in this project.
+### Built with
 
-## Using AI coding assistants
+- **Semantic HTML5 markup**
+- **CSS custom properties**
+- **Flexbox**
+- **CSS Grid**
+- **Mobile-first workflow**
+- **[Tailwind CSS](https://tailwindcss.com/)** — utility-first CSS framework
+- **Vanilla JavaScript** — form validation
+- **SVG sprites** — icon optimization
 
-We've included two files to help you if you're using AI coding assistants (like Claude, GitHub Copilot, Cursor, etc.) while working on this challenge:
+### What I learned
 
-- `AGENTS.md` - Contains detailed instructions for AI assistants on how to help you with this challenge. It's tailored to this challenge's difficulty level, so the AI will provide guidance appropriate to your learning stage—offering more support for beginner challenges and encouraging more independence on advanced ones.
-- `CLAUDE.md` - A pointer file that directs Claude-based tools to the AGENTS.md instructions.
+Working on this project helped me deepen my understanding of several key areas:
 
-**How to use them:** You don't need to do anything! These files are automatically detected by most AI coding tools. The AI will read them and adjust its behavior to be a better learning partner—guiding you toward solutions rather than just giving you the answers.
+#### 1. Responsive Design with Tailwind CSS
 
-**Note:** These files are designed to help you _learn_, not to do the work for you. The AI is instructed to ask questions, give hints, and explain concepts rather than writing complete solutions.
+Using Tailwind's utility classes significantly simplified creating responsive layouts:
 
-## Building your project
+```html
+<div
+  class="flex flex-col items-center gap-8 md:flex-row md:gap-12 lg:max-w-63.75 lg:flex-col lg:items-start"
+>
+  <!-- Content -->
+</div>
+```
 
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
+#### 2. Custom Theme Configuration
 
-1. Separate the `starter-code` from the rest of this project and rename it to something meaningful for you. Initialize the codebase as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/). **⚠️ IMPORTANT ⚠️: There are already a couple of `.gitignore` files in this project. Please do not remove them or change the content of the files. If you create a brand new project, please use the `.gitignore` files provided in your new codebase. This is to avoid the accidental upload of the Figma design file to GitHub. With these premium challenges, please be sure not to share the Figma design file in your GitHub repo. Thanks!**
-2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
+I configured Tailwind's theme to match the project's design system:
 
-## Deploying your project
+```css
+@theme {
+  --color-cyan-400: #3ee9e5;
+  --color-neutral: #ffffff;
+  --color-neutral-900: #080c20;
+  --text-preset-1: clamp(2rem, 1.046rem + 4.071vw, 3rem);
+}
+```
 
-As mentioned above, there are many ways to host your project for free. Our recommended hosts are:
+#### 3. Form Validation with JavaScript
 
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
+Implemented form validation with custom error messages and state management:
 
-You can host your site using one of these solutions or any of our other trusted providers. [Read more about our recommended and trusted hosts](https://www.frontendmentor.io/guides/hosting-your-solution).
+```javascript
+const validationEmail = (email) => EMAIL_REGEX.test(email);
 
-## Create a custom `README.md`
+const setError = (message) => {
+  errorMessage.textContent = message;
+  errorMessage.classList.remove('opacity-0');
+  errorMessage.classList.add('opacity-100');
+  inputForm.setAttribute('aria-invalid', 'true');
+};
+```
 
-We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
+#### 4. SVG Sprites
 
-The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
+Used SVG sprites for icon optimization and better performance:
 
-Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
+```html
+<svg class="h-8.75 w-35">
+  <use href="#logo"></use>
+</svg>
+```
 
-## Submitting your solution
+#### 5. Accessibility Best Practices
 
-Submit your solution on the platform for the rest of the community to see. Follow our ["Complete guide to submitting solutions"](https://www.frontendmentor.io/guides/how-to-submit-solutions) for tips on how to do this.
+- Used `aria-label` and `aria-labelledby` for screen readers
+- Implemented `visually-hidden` class for semantic headings
+- Managed focus states when errors occur
+- Used `role="alert"` for error messages
+- Added `aria-invalid` for input fields
 
-Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
+#### 6. Accessibility and User Preferences
 
-**⚠️ IMPORTANT ⚠️: With these premium challenges, please be sure not to upload the Figma design file to GitHub when you're submitting to the platform and sharing it around. If you've created a brand new project, the easiest way to do that is to copy across the `.gitignore` provided in this starter project.**
+Added support for `prefers-reduced-motion` for users sensitive to motion:
 
-## Sharing your solution
+```css
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+```
 
-There are multiple places you can share your solution:
+### Continued development
 
-1. Share your solution page in the **#finished-projects** channel of the [community](https://www.frontendmentor.io/community).
-2. Share on [X (formerly Twitter)](https://x.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in your post. We'd love to take a look at what you've built and help share it around.
-3. Share your solution on [LinkedIn](https://www.linkedin.com/company/frontend-mentor/).
-4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
+In future projects, I plan to focus on:
 
-We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback.
+1. **Performance optimization** — implementing lazy loading and critical CSS
+2. **Advanced Tailwind** — creating custom plugins and advanced configurations
+3. **Testing** — writing unit tests for JavaScript components
+4. **TypeScript** — transitioning to TypeScript for better type safety
+5. **Animations** — using CSS animations to enhance UX
 
-The more specific you are with your questions the more likely it is that another member of the community will give you feedback.
+### Useful resources
 
-## Got feedback for us?
+- [Tailwind CSS Documentation](https://tailwindcss.com/docs) — The main documentation that helped configure custom themes and utilities
+- [MDN Web Docs - Form Validation](https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation) — Excellent guide on form validation
+- [CSS-Tricks - A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) — Helped understand Flexbox layouts
+- [Frontend Mentor Community](https://www.frontendmentor.io/community) — Community where you can find solutions and discussions
 
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
+### AI Collaboration
 
-**Have fun building!** 🚀
+I used the following AI tools during development:
+
+- **GitHub Copilot** — Assisted with autocomplete, especially when writing Tailwind classes and repetitive structures
+- **ChatGPT** — Used for:
+  - Explaining complex CSS concepts
+  - Refactoring JavaScript code for form validation
+  - Generating regex patterns for email validation
+  - Reviewing semantic HTML markup
+
+**What worked well:**
+
+- Quick generation of boilerplate code
+- Clear explanations of unfamiliar technologies
+- Alternative approaches to problem-solving
+
+**What didn't work as well:**
+
+- Sometimes suggested over-engineered solutions
+- Required verification of code against project specifications
+
+## Author
+
+- GitHub - [@runny-life](https://github.com/runny-life)
+- Frontend Mentor - [@runny-life](https://www.frontendmentor.io/profile/runny-life)
+
+## Acknowledgments
+
+This project was completed as a solution to the Frontend Mentor challenge. Special thanks to the Frontend Mentor community for providing feedback and inspiration. The design and assets were provided by Frontend Mentor.

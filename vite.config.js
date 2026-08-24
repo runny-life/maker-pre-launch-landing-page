@@ -7,6 +7,7 @@ const SRC_PATH = path.resolve(__dirname, 'src');
 const SVG_FOLDER_PATH = path.resolve(SRC_PATH, 'assets', 'icons');
 
 export default defineConfig({
+  base: '/maker-pre-launch-landing-page/',
   server: {
     open: true,
   },
