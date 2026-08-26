@@ -16,8 +16,14 @@
   <body class="flex min-h-screen flex-col">
     <header class="pt-8 pb-16 md:pt-12 md:pb-14.5 lg:pt-20 lg:pb-30">
       <div class="container flex items-center justify-center md:justify-start">
-        <a href="#">
-          <svg class="h-8.75 w-35">
+        <a
+          href="#"
+          aria-label="Home"
+        >
+          <svg
+            class="h-8.75 w-35"
+            aria-hidden="true"
+          >
             <use href="#logo"></use>
           </svg>
         </a>
@@ -30,13 +36,20 @@
         >
           <svg
             class="h-57.5 w-50.75 shrink-0 md:h-86 md:w-75 md:self-start lg:h-114.5 lg:w-100 lg:self-center"
+            aria-hidden="true"
           >
             <use href="#illustration-hero-left"></use>
           </svg>
-          <svg class="lg:h-94.5] hidden shrink-0 md:block md:h-69.75 md:w-100.25 lg:w-136">
+          <svg
+            class="hidden shrink-0 md:block md:h-69.75 md:w-100.25 lg:h-94.5 lg:w-136"
+            aria-hidden="true"
+          >
             <use href="#bg-hero-squiggle"></use>
           </svg>
-          <svg class="h-57.5 w-50.75 shrink-0 md:h-86 md:w-75 lg:h-114.5 lg:w-100">
+          <svg
+            class="h-57.5 w-50.75 shrink-0 md:h-86 md:w-75 lg:h-114.5 lg:w-100"
+            aria-hidden="true"
+          >
             <use href="#illustration-hero-right"></use>
           </svg>
         </div>
@@ -53,7 +66,10 @@
               you’re looking to escape the rat race or set up a side hustle, we’ve got you covered.
             </p>
           </div>
-          <svg class="h-10.5 w-6.5 animate-bounce">
+          <svg
+            class="h-10.5 w-6.5 animate-bounce"
+            aria-hidden="true"
+          >
             <use href="#icon-scroll"></use>
           </svg>
         </div>
@@ -154,10 +170,15 @@
           </ul>
         </div>
       </section>
-      <section aria-label="pricing-title">
+      <section aria-labelledby="pricing-title">
         <div class="container flex flex-col items-center gap-20">
           <div class="flex max-w-135 flex-col gap-6 text-center">
-            <h2 class="text-preset-1 text-neutral font-extrabold">Our pricing plans</h2>
+            <h2
+              class="text-preset-1 text-neutral font-extrabold"
+              id="pricing-title"
+            >
+              Our pricing plans
+            </h2>
             <p class="text-preset-5 text-neutral/60">
               We only make money when our creators make money. Our plans are always affordable, and
               it’s completely free to get started.
@@ -273,7 +294,10 @@
     </main>
     <footer class="grid items-center justify-center pt-20 pb-16">
       <div class="col-start-1 row-start-1 overflow-hidden">
-        <svg class="h-26.25 w-192.75 md:h-38.25 md:w-280 lg:h-56.5 lg:w-[104rem]">
+        <svg
+          class="h-26.25 w-192.75 md:h-38.25 md:w-280 lg:h-56.5 lg:w-[104rem]"
+          aria-hidden="true"
+        >
           <use href="#bg-footer-squiggle"></use>
         </svg>
       </div>

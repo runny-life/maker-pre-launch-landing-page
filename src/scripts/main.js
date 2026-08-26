@@ -34,13 +34,12 @@ const onSubmitForm = (event) => {
   }
 
   if (!validationEmail(email)) {
-    setError("Oops! That doesn't look like an email address");
+    setError('Oops! That doesn’t look like an email address');
     inputForm.focus();
     return;
   }
 
   clearError();
-  console.log('Subscribed:', email);
   inputForm.value = '';
 };
 
